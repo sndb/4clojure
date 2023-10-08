@@ -1,3 +1,4 @@
+;; Problem 111, Crossword puzzle
 (fn [word crossword]
   (let [rows (map #(remove #{\space} %) crossword)
         cols (apply map list rows)
